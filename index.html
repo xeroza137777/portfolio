@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rasya Raditya - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="terminal">
+                <div class="terminal-header">
+                    <span class="terminal-title">Initializing Portfolio...</span>
+                </div>
+                <div class="terminal-body">
+                    <div class="loading-text">
+                        <span id="loading-text">Loading...</span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Xero</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <canvas id="matrix-canvas"></canvas>
+            <div class="particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="typing-text" data-text="Rasya Xeroza">Rasya Xeroza</span>
+                </h1>
+                <div class="hero-subtitle">
+                    <span class="role-text">I'm a </span>
+                    <span class="rotating-text">
+                        <span class="role active">Web Developer</span>
+                        <span class="role">Cyber Security Engineer</span>
+                        <span class="role">IT Consultant</span>
+                        <span class="role">Investor</span>
+                        <span class="role">Informatics Engineer</span>
+                    </span>
+                </div>
+                <p class="hero-description">
+                    Passionate about creating secure, innovative digital solutions and building the future of technology.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+                </div>
+                <div class="about-text">
+                    <div class="text-center">
+                        <h3>Transforming Ideas into Digital Reality</h3>
+                    <p>
+                        Saya adalah seorang profesional teknologi dengan pengalaman luas dalam pengembangan web, 
+                        keamanan siber, 
+                        dan konsultasi IT. Dengan latar belakang yang kuat dalam informatika dan 
+                        jaringan cyber, 
+                        saya berdedikasi untuk menciptakan solusi digital yang aman, inovatif, dan efisien.
+                    </p>
+                    <p>
+                        Sebagai investor teknologi, saya juga memiliki visi untuk mengidentifikasi dan mendukung 
+                        inovasi-inovasi yang dapat mengubah masa depan industri teknologi.
+                    </p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Skills</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card" data-skill="web-developer">
+                    <div class="skill-icon">
+                        <img src="assets/icons/web_developer.png" alt="Web Developer">
+                    </div>
+                    <h3>Web Developer</h3>
+                    <p>Creating responsive, modern websites and web applications using latest technologies.</p>
+                    <div class="skill-tech">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Node.js</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-skill="cyber-security">
+                    <div class="skill-icon">
+                        <img src="assets/icons/cyber_security.png" alt="Cyber Security">
+                    </div>
+                    <h3>Cyber Security Engineer</h3>
+                    <p>Protecting digital assets and implementing robust security measures for organizations.</p>
+                    <div class="skill-tech">
+                        <span>Penetration Testing</span>
+                        <span>Network Security</span>
+                        <span>Vulnerability Assessment</span>
+                        <span>Security Auditing</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-skill="it-consultant">
+                    <div class="skill-icon">
+                        <img src="assets/icons/it_consultant.png" alt="IT Consultant">
+                    </div>
+                    <h3>IT Consultant</h3>
+                    <p>Providing strategic technology solutions and guidance for business growth.</p>
+                    <div class="skill-tech">
+                        <span>System Architecture</span>
+                        <span>Digital Transformation</span>
+                        <span>Process Optimization</span>
+                        <span>Technology Strategy</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-skill="investor">
+                    <div class="skill-icon">
+                        <img src="assets/icons/investor.png" alt="Investor">
+                    </div>
+                    <h3>Investor</h3>
+                    <p>Identifying and investing in promising technology startups and innovations.</p>
+                    <div class="skill-tech">
+                        <span>Market Analysis</span>
+                        <span>Due Diligence</span>
+                        <span>Portfolio Management</span>
+                        <span>Risk Assessment</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-skill="informatics-engineer">
+                    <div class="skill-icon">
+                        <img src="assets/icons/informatics_engineer.png" alt="Informatics Engineer">
+                    </div>
+                    <h3>Informatics Engineer</h3>
+                    <p>Designing and developing complex information systems and software solutions.</p>
+                    <div class="skill-tech">
+                        <span>Software Engineering</span>
+                        <span>Database Design</span>
+                        <span>System Integration</span>
+                        <span>Algorithm Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Services</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="services-content">
+                <div class="service-item">
+                    <div class="service-header">
+                        <h3>Network Cyber Security</h3>
+                        <div class="service-icon">🛡️</div>
+                    </div>
+                    <div class="service-description">
+                        <p>Comprehensive network security solutions including firewall configuration, intrusion detection, and security monitoring.</p>
+                        <ul>
+                            <li>Network Vulnerability Assessment</li>
+                            <li>Firewall Configuration & Management</li>
+                            <li>Intrusion Detection Systems</li>
+                            <li>Security Monitoring & Analysis</li>
+                            <li>Incident Response Planning</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-header">
+                        <h3>Landing Pages Development</h3>
+                        <div class="service-icon">🚀</div>
+                    </div>
+                    <div class="service-description">
+                        <p>High-converting landing pages designed to maximize user engagement and conversion rates.</p>
+                        <ul>
+                            <li>Responsive Design Implementation</li>
+                            <li>Conversion Rate Optimization</li>
+                            <li>A/B Testing & Analytics</li>
+                            <li>SEO Optimization</li>
+                            <li>Performance Optimization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Portfolio</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="security">Cyber Security</button>
+                <button class="filter-btn" data-filter="consulting">IT Consulting</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">Project 1</div>
+                        <div class="portfolio-overlay">
+                            <h4>E-Commerce Platform</h4>
+                            <p>Modern e-commerce solution with advanced features</p>
+                            <div class="portfolio-links">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="security">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">Project 2</div>
+                        <div class="portfolio-overlay">
+                            <h4>Security Audit System</h4>
+                            <p>Comprehensive security assessment tool</p>
+                            <div class="portfolio-links">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">Project 3</div>
+                        <div class="portfolio-overlay">
+                            <h4>Corporate Website</h4>
+                            <p>Professional corporate website with CMS</p>
+                            <div class="portfolio-links">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="consulting">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">Project 4</div>
+                        <div class="portfolio-overlay">
+                            <h4>Digital Transformation</h4>
+                            <p>Complete digital transformation strategy</p>
+                            <div class="portfolio-links">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Work Together</h3>
+                    <p>Ready to start your next project? Let's discuss how I can help bring your ideas to life.</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>radityahunter@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+62 0xxxxx</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>jawa timur kediri, Indonesia</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Instagram</a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Rasya Raditya. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/particles.js"></script>
+</body>
+</html>
+
